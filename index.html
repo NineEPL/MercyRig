@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MercyRig</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/./index.html">🎸 MercyRig</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="./nav-links/artists.html">Artists</a></li>
+          <li class="nav-item"><a class="nav-link" href="./nav-links/gear.html">Gear</a></li>
+          <li class="nav-item"><a class="nav-link" href="./nav-links/tones.html">Tones</a></li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navigation bar -->
+
+  <!-- Main content -->
+  <main class="flex-grow-1">
+
+    <!-- Opener Banner -->
+    <header class="text-white text-center py-5" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/artists/jim-root.jpg) center; background-size: cover;">
+      <div class="container">
+      <h1>Welcome to MercyRig</h1>
+      <p>Find your tone!</p>
+      <form class="d-flex justify-content-center" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+          style="max-width: 300px;">
+        <button class="btn btn-primary" type="submit">Get started</button>
+      </form>
+    </div>
+    </header>
+
+    <!-- Popular Artist list -->
+    <section class="container my-4">
+      <h2>Popular(In my opinion) Artists</h2>
+      <div class="scrolling-wrapper py-3">
+        <ul class="list-group list-group-horizontal">
+          <!----------------------------First Item--------------------------->
+          <li class="swiper-slide w-20 flex-shrink-0" role="group" aria-label="1 / 20"
+            style="width: 225.6px; margin-right: 8px;">
+            <div class="rounded overflow-hidden position-relative" style="height: 288px;">
+              <img alt="Kurt Cobain" class="w-100 h-100 object-fit-cover"
+                src="./img/artists/jim-root.jpg">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-end align-items-end"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);">
+                <div class="px-3 py-2 w-100">
+                  <h5 class="h5 fw-bold text-white mb-1">
+                    Jim Root
+                  </h5>
+                  <p class="small text-white fw-semibold mb-2 text-truncate">
+                    Guitarist · Slipknot/Stone Sour
+                  </p>
+                </div>
+              </div>
+              <a href="/pros/jim-root.html" class="stretched-link"></a>
+            </div>
+          </li>
+          <!----------------------------End of First Item--------------------------->
+          <!----------------------------Second Item--------------------------->
+          <li class="swiper-slide w-20 flex-shrink-0" role="group" aria-label="1 / 20"
+          style="width: 225.6px; margin-right: 8px;">
+          <div class="rounded overflow-hidden position-relative" style="height: 288px;">
+            <img alt="Kurt Cobain" class="w-100 h-100 object-fit-cover"
+              src="./img/artists/tim-henson.jpg">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-end align-items-end"
+              style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);">
+              <div class="px-3 py-2 w-100">
+                <h5 class="h5 fw-bold text-white mb-1">
+                  Tim Henson
+                </h5>
+                <p class="small text-white fw-semibold mb-2 text-truncate">
+                  Guitarist · Polyphia
+                </p>
+              </div>
+            </div>
+            <a href="/pros/tim-henson.html" class="stretched-link"></a>
+          </div>
+        </li>
+          <!----------------------------End of Second Item--------------------------->
+          <!-----------------------------Thitd Item---------------------------------->
+          <li class="swiper-slide w-20 flex-shrink-0" role="group" aria-label="1 / 20"
+          style="width: 225.6px; margin-right: 8px;">
+          <div class="rounded overflow-hidden position-relative" style="height: 288px;">
+            <img alt="Kurt Cobain" class="w-100 h-100 object-fit-cover"
+              src="./img/artists/ichika-nito.jpg">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-end align-items-end"
+              style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);">
+              <div class="px-3 py-2 w-100">
+                <h5 class="h5 fw-bold text-white mb-1">
+                  Ichika Nito
+                </h5>
+                <p class="small text-white fw-semibold mb-2 text-truncate">
+                  Guitarist · Solo Artist/Dios
+                </p>
+              </div>
+            </div>
+            <a href="/pros/ichika-nito.html" class="stretched-link"></a>
+          </div>
+        </li>
+        <!-----------------------------End of Third Item--------------------------------->
+        <!-----------------------------Fourth Item---------------------------------->
+        <li class="swiper-slide w-20 flex-shrink-0" role="group" aria-label="1 / 20"
+            style="width: 225.6px; margin-right: 8px;">
+            <div class="rounded overflow-hidden position-relative" style="height: 288px;">
+              <img alt="Kurt Cobain" class="w-100 h-100 object-fit-cover"
+                src="./img/artists/syn-gates.jpg">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-end align-items-end"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);">
+                <div class="px-3 py-2 w-100">
+                  <h5 class="h5 fw-bold text-white mb-1">
+                    Synyster Gates
+                  </h5>
+                  <p class="small text-white fw-semibold mb-2 text-truncate">
+                    Guitarist · Avenged Sevenfold
+                  </p>
+                </div>
+              </div>
+              <a href="/pros/jim-root.html" class="stretched-link"></a>
+            </div>
+          </li>
+        <!-----------------------------End of Fourth Item--------------------------------->
+        <!-----------------Fifth item-------------------------->
+        <li class="swiper-slide w-20 flex-shrink-0" role="group" aria-label="1 / 20"
+          style="width: 225.6px; margin-right: 8px;">
+          <div class="rounded overflow-hidden position-relative" style="height: 288px;">
+            <img alt="Kurt Cobain" class="w-100 h-100 object-fit-cover"
+              src="./img/artists/kurt-cobain.jpg">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-end align-items-end"
+              style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);">
+              <div class="px-3 py-2 w-100">
+                <h5 class="h5 fw-bold text-white mb-1">
+                  Kurt Cobain
+                </h5>
+                <p class="small text-white fw-semibold mb-2 text-truncate">
+                  Guitarist, Singer · Nirvana
+                </p>
+              </div>
+            </div>
+            <a href="/pros/kurt-cobain.html" class="stretched-link"></a>
+          </div>
+        </li>
+
+        <!------------End of 5 item-->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Popular Gear list -->
+    <section class="container my-4">
+      <h2>Popular Gear</h2>
+      <div class="scrolling-wrapper py-3">
+        <ul class="list-group list-group-horizontal">
+          <!----------------------------First Item--------------------------->
+          <li class="swiper-slide w-20 flex-shrink-0" role="group" aria-label="1 / 20"
+            style="width: 225.6px; margin-right: 8px;">
+            <div class="rounded overflow-hidden position-relative" style="height: 288px;">
+              <img alt="Kurt Cobain" class="w-100 h-100 object-fit-cover"
+                src="./img/gear/modellers/neural-dsp-quad-cortex.jpg">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-end align-items-end"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);">
+                <div class="px-3 py-2 w-100">
+                  <h5 class="h5 fw-bold text-white mb-1">
+                    Quad Cortex
+                  </h5>
+                  <p class="small text-white fw-semibold mb-2 text-truncate">
+                    Neural DSP · Modeller
+                  </p>
+                </div>
+              </div>
+              <a href="/gear/modellers/quad-cortex.html" class="stretched-link"></a>
+            </div>
+          </li>
+          <!----------------------------End of First Item--------------------------->
+          <!----------------------------Second Item--------------------------->
+          <li class="swiper-slide w-20 flex-shrink-0" role="group" aria-label="1 / 20"
+            style="width: 225.6px; margin-right: 8px;">
+            <div class="rounded overflow-hidden position-relative" style="height: 288px;">
+              <img alt="Kurt Cobain" class="w-100 h-100 object-fit-cover"
+                src="./img/gear/effects/Dunlop-JD-F2-Fuzz-Face.png">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-end align-items-end"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);">
+                <div class="px-3 py-2 w-100">
+                  <h5 class="h5 fw-bold text-white mb-1">
+                    Fuzz Face
+                  </h5>
+                  <p class="small text-white fw-semibold mb-2 text-truncate">
+                    Dunlop · Fuzz Pedal
+                  </p>
+                </div>
+              </div>
+              <a href="/gear/effects/fuzz-face.html" class="stretched-link"></a>
+            </div>
+          </li>
+          <!----------------------------End of Second Item--------------------------->
+          <!-----------------------------Thitd Item---------------------------------->
+          <li class="swiper-slide w-20 flex-shrink-0" role="group" aria-label="1 / 20"
+            style="width: 225.6px; margin-right: 8px;">
+            <div class="rounded overflow-hidden position-relative" style="height: 288px;">
+              <img alt="Kurt Cobain" class="w-100 h-100 object-fit-cover"
+                src="./img/gear/amp/vox-ac30-s1.jpg">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-end align-items-end"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);">
+                <div class="px-3 py-2 w-100">
+                  <h5 class="h5 fw-bold text-white mb-1">
+                    AC30 S1
+                  </h5>
+                  <p class="small text-white fw-semibold mb-2 text-truncate">
+                    VOX · Amplifier
+                  </p>
+                </div>
+              </div>
+              <a href="/gear/amp/vox-ac30-s1.html" class="stretched-link"></a>
+            </div>
+          </li>
+          <!-----------------------------End of Third Item--------------------------------->
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Filler Section 
+    <section class="container my-4">
+      <h2>Filler</h2>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="gear5.html">Gear 5</a></li>
+        <li class="list-group-item"><a href="gear6.html">Gear 6</a></li>
+        <li class="list-group-item"><a href="gear7.html">Gear 7</a></li>
+        <li class="list-group-item"><a href="gear8.html">Gear 8</a></li>
+      </ul>
+    </section>
+    -->
+
+  </main>
+  <!--End of Main content-->
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-dark text-white text-center py-4 mt-auto">
+    <p>&copy; 2025 MercyRig. None of rights reserved.</p>
+    <p>
+      Follow us on:
+      <a class="text-white" href="https://www.facebook.com" target="_blank">Facebook</a> |
+      <a class="text-white" href="https://www.twitter.com" target="_blank">Twitter</a> |
+      <a class="text-white" href="https://www.instagram.com" target="_blank">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
