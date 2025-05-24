@@ -31,10 +31,24 @@
           <li class="nav-item"><a class="nav-link" href="./nav-links/tones.html">Tones</a></li>
         </ul>
 
-        <form class="d-flex" role="search">
+        <!--<form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-primary" type="submit">Search</button>
-        </form>
+        </form>-->
+        <form id="siteSearchForm" class="d-flex" role="search">
+  <input class="form-control me-2" type="search" id="siteSearchInput" placeholder="Search this site..." aria-label="Search">
+  <button class="btn btn-primary" type="submit">Search</button>
+</form>
+
+<script>
+  document.getElementById('siteSearchForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const query = document.getElementById('siteSearchInput').value;
+    const site = 'https://nineepl.github.io/MercyRig/nav-links/artists.html'; // change this to your actual site or folder
+    const fullQuery = encodeURIComponent(site + ' ' + query);
+    window.open('https://www.google.com/search?q=' + fullQuery, '_blank');
+  });
+</script>
       </div>
     </div>
   </nav>
