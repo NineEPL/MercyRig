@@ -32,9 +32,10 @@
         </ul>
 
         
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex artistSearchForm" role="search" autocomplete="off">
+          <input class="form-control me-2 artistInput"  type="search" placeholder="Search" aria-label="Search" style ="max-width: 300px;">
           <button class="btn btn-primary" type="submit">Search</button>
+          <ul class="list-group position-absolute mt-5 w-40 autocompleteList"></ul>
         </form>
 
       </div>
@@ -52,18 +53,14 @@
         <h1>Welcome to MercyRig</h1>
         <p>Find your tone!</p>
 
-
-        <!--<form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-primary" type="submit">Search</button>
-        </form>-->
-
-        <form id="artistSearchForm" class="d-flex" role="search" autocomplete="off">
-          <input class="form-control me-2" id="artistInput" type="text" placeholder="Search artist..."
-            aria-label="Search">
-          <button class="btn btn-primary" type="submit">Search</button>
-          <ul id="autocompleteList" class="list-group position-absolute mt-5 w-50"></ul>
+        <form class="d-flex justify-content-center artistSearchForm" role="search" autocomplete="off">
+          <input class="form-control me-2 artistInput"  type="search" placeholder="Search" aria-label="Search" style ="max-width: 300px;">
+          <button class="btn btn-primary" type="submit">Get Started</button>
+          <ul  class="list-group position-absolute mt-5 w-40 autocompleteList"></ul>
         </form>
+
+
+
 
       </div>
     </header>

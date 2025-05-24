@@ -7,9 +7,9 @@
     { name: "Tim Henson", file: "./pros/tim-henson.html" },
   ];
 
-const input = document.getElementById("artistInput");
-  const list = document.getElementById("autocompleteList");
-  const form = document.getElementById("artistSearchForm");
+const input = document.getElementsByClassName("artistInput");
+  const list = document.getElementsByClassName("autocompleteList");
+  const form = document.getElementsByClassName("artistSearchForm");
 
   input.addEventListener("input", () => {
     const query = input.value.toLowerCase();
