@@ -2,79 +2,81 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MercyRig</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercyRig</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-  <!-- Navigation bar -->
-  <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">🎸 MercyRig</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="../nav-links/artists.html">Artists</a></li>
-          <li class="nav-item"><a class="nav-link" href="../nav-links/gear.html">Gear</a></li>
-          <li class="nav-item"><a class="nav-link" href="../nav-links/tones.html">Tones</a></li>
-        </ul>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">🎸 MercyRig</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../nav-links/artists.html">Artists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../nav-links/gear.html">Gear</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../nav-links/tones.html">Tones</a></li>
+                </ul>
 
-        <form id="artistSearchForm" class="d-flex" role="search" autocomplete="off">
-          <input class="form-control me-2" id="artistInput" type="text" placeholder="Search artist..."
-            aria-label="Search">
-          <button class="btn btn-primary" type="submit">Search</button>
-          <ul id="autocompleteList" class="list-group position-absolute mt-5 w-50"></ul>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <!-- End Navigation bar -->
-
-  <!-- Main content -->
-  <main class="flex-grow-1">
-
-    <!-- Opener Banner -->
-    <header class="text-white text-center py-5"
-      style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/artists/matthew-bellamy.jpeg) center; background-size: cover;">
-
-      <h1>Matthew Bellamy</h1>
-      <p>Find your tone!</p>
-    </header>
-    <!-- End of Opener Banner -->
-
-    <!----------------------------Artis's Gear----------------------------------------->
-    <div class="container my-3">
-      <h1 class="h1 text-heading-lg">Matt's gear</h1>
-
-
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-------------------------------Card 1--------------------------------------->
-        <div class="col">
-          <div class="card h-100">
-            <a href="https://www.thomann.pl/cort_mbm_2h_manson_meta_sus_sb.htm?atr=true" class="card-link">
-              <img src="../img/gear/guitars/cort-mbm-2h-matt-bellamy.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Cort MBM-2H Manson Meta SUS SB</h5>
-                <p class="card-text"> The Cort MBM-2H Manson Meta SUS SB is Matt Bellamy’s signature guitar, featuring a Sustainiac system,
-                     dual humbuckers, and sleek design for powerful, experimental rock tones.</p>
-              </div>
-            </a>
-          </div>
+                <form id="artistSearchForm" class="d-flex" role="search" autocomplete="off">
+                    <input class="form-control me-2" id="artistInput" type="text" placeholder="Search artist..."
+                        aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                    <ul id="autocompleteList" class="list-group position-absolute mt-5 w-50"></ul>
+                </form>
+            </div>
         </div>
-        <!-------------------------------Card 2--------------------------------------->
-        <div class="col">
+    </nav>
+    <!-- End Navigation bar -->
+
+    <!-- Main content -->
+    <main class="flex-grow-1">
+
+        <!-- Opener Banner -->
+        <header class="text-white text-center py-5"
+            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/artists/matthew-bellamy.jpeg) center; background-size: cover;">
+
+            <h1>Matthew Bellamy</h1>
+            <p>Find your tone!</p>
+        </header>
+        <!-- End of Opener Banner -->
+
+        <!----------------------------Artis's Gear----------------------------------------->
+        <div class="container my-3">
+            <h1 class="h1 text-heading-lg">Matt's gear</h1>
+
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-------------------------------Card 1--------------------------------------->
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="https://www.thomann.pl/cort_mbm_2h_manson_meta_sus_sb.htm?atr=true" class="card-link">
+                            <img src="../img/gear/guitars/cort-mbm-2h-matt-bellamy.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cort MBM-2H Manson Meta SUS SB</h5>
+                                <p class="card-text"> The Cort MBM-2H Manson Meta SUS SB is Matt Bellamy’s signature
+                                    guitar, featuring a Sustainiac system,
+                                    dual humbuckers, and sleek design for powerful, experimental rock tones.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-------------------------------Card 2--------------------------------------->
+                <div class="col">
                     <div class="card h-100">
                         <a href="https://www.thomann.pl/vox_ac30_c2_gitarrencombo.htm" class="card-link">
                             <img src="../img/gear/amp/vox-ac30-s1.jpg" class="card-img-top" alt="...">
@@ -88,43 +90,47 @@
                         </a>
                     </div>
                 </div>
-        <!-------------------------------Card 3--------------------------------------->
-        <div class="col">
-          <div class="card h-100">
-            <a href="https://www.thomann.de/intl/kemper_profiling_amplifier.htm?offid=1&affid=972&utm_source=equipboard.com&utm_medium=affiliate"
-              class="card-link">
-              <img src="../img/gear/amp/kemper-profiling-amplifier-head-wh.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Kemper Profiling Amplifier Head WH</h5>
-                <p class="card-text"> The Kemper Profiling Amplifier Head WH is a powerful digital amp that captures and replicates real tube amp tones. With advanced profiling technology, built-in effects, versatile connectivity, and a compact design,
-                     it’s perfect for guitarists seeking studio-quality sound in any live or recording setup.</p>
-              </div>
-            </a>
-          </div>
-        </div>
+                <!-------------------------------Card 3--------------------------------------->
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="https://www.thomann.de/intl/kemper_profiling_amplifier.htm?offid=1&affid=972&utm_source=equipboard.com&utm_medium=affiliate"
+                            class="card-link">
+                            <img src="../img/gear/amp/kemper-profiling-amplifier-head-wh.jpeg" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kemper Profiling Amplifier Head WH</h5>
+                                <p class="card-text"> The Kemper Profiling Amplifier Head WH is a powerful digital amp
+                                    that captures and replicates real tube amp tones. With advanced profiling
+                                    technology, built-in effects, versatile connectivity, and a compact design,
+                                    it’s perfect for guitarists seeking studio-quality sound in any live or recording
+                                    setup.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
 
-      </div>
+            </div>
 
 
-  </main>
-  <!--End of Main content-->
+    </main>
+    <!--End of Main content-->
 
-  <!-- Footer -->
-  <footer class="container-fluid bg-dark text-white text-center py-4 mt-auto">
-    <p>&copy; 2025 MercyRig. None of rights reserved.</p>
-    <p>
-      Follow us on: (only github works)
-      <a class="text-white" href="https://www.facebook.com" target="_blank">Facebook</a> |
-      <a class="text-white" href="https://www.instagram.com" target="_blank">Instagram</a> |
-      <a class="text-white" href="https://github.com/NineEPL/MercyRig" target="_blank">Github</a>
-    </p>
-    <p>
-      The latest version of MercyRig:
-      <a class="text-white" href="https://nineepl.github.io/MercyRig/index.html" target="_blank">here</a>
-    </p>
-  </footer>
-
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white text-center py-4 mt-auto">
+        <p>&copy; 2025 MercyRig. None of rights reserved.</p>
+        <p>
+            Follow us on: (only github works)
+            <a class="text-white" href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a class="text-white" href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a class="text-white" href="https://github.com/NineEPL/MercyRig" target="_blank">Github</a>
+        </p>
+        <p>
+            The latest version of MercyRig:
+            <a class="text-white" href="https://nineepl.github.io/MercyRig/index.html" target="_blank">here</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
