@@ -35,20 +35,12 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-primary" type="submit">Search</button>
         </form>-->
-        <form id="siteSearchForm" class="d-flex" role="search">
-  <input class="form-control me-2" type="search" id="siteSearchInput" placeholder="Search this site..." aria-label="Search">
-  <button class="btn btn-primary" type="submit">Search</button>
-</form>
-
-<script>
-  document.getElementById('siteSearchForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const query = document.getElementById('siteSearchInput').value;
-    const site = 'https://nineepl.github.io/MercyRig/'; // change this to your actual site or folder
-    const fullQuery = encodeURIComponent(site + ' ' + query);
-    window.open('https://www.google.com/search?q=' + fullQuery, '_blank');
-  });
-</script>
+        <form id="artistSearchForm" class="d-flex" role="search" autocomplete="off">
+          <input class="form-control me-2" id="artistInput" type="text" placeholder="Search artist..."
+            aria-label="Search">
+          <button class="btn btn-primary" type="submit">Search</button>
+          <ul id="autocompleteList" class="list-group position-absolute mt-5 w-50"></ul>
+        </form>
       </div>
     </div>
   </nav>
@@ -63,10 +55,11 @@
       <div class="container">
         <h1>Welcome to MercyRig</h1>
         <p>Find your tone!</p>
-        <form class="d-flex justify-content-center" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-            style="max-width: 300px;">
-          <button class="btn btn-primary" type="submit">Get started</button>
+        <form id="artistSearchForm" class="d-flex" role="search" autocomplete="off">
+          <input class="form-control me-2" id="artistInput" type="text" placeholder="Search artist..."
+            aria-label="Search">
+          <button class="btn btn-primary" type="submit">Get Started</button>
+          <ul id="autocompleteList" class="list-group position-absolute mt-5 w-50"></ul>
         </form>
       </div>
     </header>
@@ -326,7 +319,7 @@
       <a class="text-white" href="https://nineepl.github.io/MercyRig/index.html" target="_blank">here</a>
     </p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 
 </html>

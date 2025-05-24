@@ -32,9 +32,11 @@
                     <li class="nav-item"><a class="nav-link" href="../nav-links/tones.html">Tones</a></li>
                 </ul>
 
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <form id="artistSearchForm" class="d-flex" role="search" autocomplete="off">
+                    <input class="form-control me-2" id="artistInput" type="text" placeholder="Search artist..."
+                        aria-label="Search">
                     <button class="btn btn-primary" type="submit">Search</button>
+                    <ul id="autocompleteList" class="list-group position-absolute mt-5 w-50"></ul>
                 </form>
             </div>
         </div>
@@ -82,7 +84,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">Ibanez ICHI00</h5>
                                 <p class="card-text"> The Ibanez ICHI00 features a uniquely sculpted Talman-style body
-                                    shape, offering a retro-modern look with ergonomic contours for comfortable playability and
+                                    shape, offering a retro-modern look with ergonomic contours for comfortable
+                                    playability and
                                     standout stage presence.</p>
                             </div>
                         </a>
