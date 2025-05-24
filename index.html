@@ -44,7 +44,7 @@
   document.getElementById('siteSearchForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const query = document.getElementById('siteSearchInput').value;
-    const site = 'https://nineepl.github.io/MercyRig/nav-links/artists.html'; // change this to your actual site or folder
+    const site = 'https://nineepl.github.io/MercyRig/'; // change this to your actual site or folder
     const fullQuery = encodeURIComponent(site + ' ' + query);
     window.open('https://www.google.com/search?q=' + fullQuery, '_blank');
   });
