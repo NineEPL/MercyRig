@@ -1,4 +1,4 @@
-
+// This script is for navbar search, but i have no time to implement it yet.
   const artists = [
     { name: "Jim Root", file: "./pros/jim-root.html" },
     { name: "Ichika Nito", file: "./pros/ichika-nito.html" },
